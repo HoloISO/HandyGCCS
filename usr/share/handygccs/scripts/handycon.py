@@ -421,7 +421,7 @@ def get_powerkey():
     for device in devices_original:
 
         # Power Button
-        if device.name == 'Power Button' and device.phys == "LNXPWRBN/button/input0":
+        if device.name == 'Power Button' and device.phys == "PNP0C0C/button/input0":
             power_device = device
             if CAPTURE_POWER:
                 power_device.grab()
